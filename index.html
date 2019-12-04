@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // let arr = [2]
+        // // getSimples (100)
+
+        // function getSimples (limit) {
+        //     let num = arr[0]
+
+        //     while (num <= limit) {
+        //         if (checkNum(num) == true) {
+        //             arr.push (num)
+        //         }
+        //         num++
+        //     }
+        // }
+
+        // function checkNum (number) {
+        //     arr.forEach (el => {
+        //         if (number % el == 0) {
+        //             return false
+        //         }
+        //         return true
+        //     })
+        // }
+
+        //for (let i = 0; i <= 10; console.log (i++)) {}
+
+        // let sym = '*'
+        // let str = ''
+        // for (let i = 1; i <= 10; i++) {
+        //     for (let j = 1; j <= i; j++) {
+        //         str += sym
+        //         console.log (str)
+        //     }
+        // }
+
+        // ОБЪЕКТЫ
+        // 1) у каждого объекта есть свой класс
+        // 2) у каждого объекта есть свойства
+        // 3) у каждого объекта есть методы
+
+        // let obj = {}
+        // let obj2 = new Object ()
+
+        // let vova = {
+        //     name: 'Vladimir',
+        //     goWork: function (hrs = 8) {
+        //         console.log (`It goes work for ${hrs} hours`) //
+        //         //console.log ('Vova goes work for ' + hrs + ' hours')
+        //     }
+        // }
+
+        // let dasha = {
+        //     name: 'Daria',
+        //     goWork: function (hrs = 8) {
+        //         console.log (`${this.name} goes work for ${hrs} hours`)
+        //     }
+        // }
+
+        // let olya = {
+        //     name: 'Olga',
+        //     goWork: function (hrs = 8) {
+        //         console.log (`${this.name} goes work for ${hrs} hours`)
+        //     }
+        // }
+
+        let people = []
+
+        function createHuman (namePar) { // КОНСТРУКТОР
+            return {
+                name: namePar,
+                goWork (hrs = 8) {
+                    console.log (`${this.name} goes work for ${hrs} hours`)
+                }
+            }
+        }
+
+        // let a = {a: 1} // a - объект
+        // let b = a // b - ссылка на объект a
+        // let c = Object.assign ({}, a, {b: 'new object'})
+        //(a === b) // false
+    </script>
+</body>
+</html>
